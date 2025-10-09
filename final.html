@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경 웹</title>
+    <link rel="stylesheet" href="new_index.css">
+    <script defer src="./index copy 4.js"></script>
+    <script defer
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCS9TPZSUaGtbduwv1xsatK0I9y9Wt2olo&callback=initMap"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>환경 웹</h1>
+    </header>
+
+    <section id="main-content">
+
+        <div class="container">
+
+            <div class="item">
+
+                <h2>행정 구역의 개수에 따른 할인의 유무 & 크기 비교</h2>
+                <p>도로명 주소의 맨 앞 문자열(ex 강남구)만 분리 - > 행정구역별 차지 비율 시각화</p>
+                <div class="responsive-container">
+                    <img id="responsive-image" src="chart.png" alt="차트 이미지">
+                </div>
+
+            </div>
+            <div class="item">
+                <h2>브랜드 규모별 할인 금액의 양 => 총계, 평균</h2>
+                <p>중소 & 대형 브랜드 분리 -> 2차원 차트 시각화</p>
+
+                <div class="responsive-container">
+                    <img id="responsive-image" src="mid.png" alt="중소형 이미지">
+                </div>
+                <div class="responsive-container">
+                    <img id="responsive-image" src="big.png" alt="대형 이미지">
+                </div>
+
+            </div>
+            <div class="item">
+                <h2>커피전문점 내 1회용품 이용 현황</h2>
+                <p># 주최 : 한국 소비자원, 한국부인회총본부</p>
+                <p># 내용 : 커피전문점 내 1회용품 이용 현황</p>
+                <p># 대상 : 일주일 이내 커피 전문점을 이용한 경험이 있는 소비자 1000명 대상</p>
+
+                <div class="responsive-container">
+                    <img id="responsive-image" src="awg.png" alt="파이 차트 이미지">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <h2>커피 전문점 매장 내 텀블러 지참 소비자 비율</h2>
+                <p># 주최 : 한국 소비자원</p>
+                <p># 내용 : 커피 전문점 매장 내 텀블러 지참 소비자 비율</p>
+                <p># 대상 : 커피 구매 1500명 소비자 대상</p>
+                <div class="responsive-container">
+                    <img id="responsive-image" src="pi_chart.png" alt="파이 차트 이미지">
+                </div>
+
+            </div>
+            <div class="item">
+                <h2>자발적 협약업체 종이컵,플라스틱컵 수거현황(18.7월~19년 4월)</h2>
+                <p># 주최 : 환경부</p>
+                <p># 내용 : 자발적 협약업체 종이컵,플라스틱컵 수거현황(18.7월~19년 4월)</p>
+                <p># 톤단위</p>
+                <div class="responsive-container">
+                    <img id="responsive-image" src="3.png" alt="지도 이미지">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <h2>폐플라스틱과 재활용 처리의 현황</h2>
+                <p>플라스틱 재활용을 수행하는 지역(도별)의 분포(개수) 분석 -> 재활용 처리 현황에 대한 지도 시각화</p>
+
+                <div class="responsive-container">
+                    <!-- <img id="responsive-image" src="map.png" alt="맵 이미지"> -->
+                    <div id="map" style="height: 600px;"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 환경 웹</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!--js파일 호출 index.js -->
+    <script defer type="text/javascript" src="/stickcode/googleMap/google_map.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS9TPZSUaGtbduwv1xsatK0I9y9Wt2olo&callback=initMap"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+</body>
+
+</html>
